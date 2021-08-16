@@ -175,8 +175,14 @@ var quotes = [
     ];
 
     function newQuote(){ 
-    var randomNumber = Math.floor(Math.random() * (quotes.length));
+        if(quotes.length) {
+    let randomNumber = Math.floor(Math.random() * (quotes.length));
 
     //placing quote in display
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
-    }
+    quotes.splice(random, 1);
+}
+
+else {
+    document.getElementById('quoteDisplay'.innerHTML = "No more quotes!");
+}} 
