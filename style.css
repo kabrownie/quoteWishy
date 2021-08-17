@@ -40,3 +40,12 @@ button{
     border-radius: 100px;
   
 }
+.git a{
+    color: #000;
+}
+.git{
+    position: fixed;
+    top: 0;
+    font-size: 50px;
+    
+}
