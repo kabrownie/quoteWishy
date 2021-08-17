@@ -1,0 +1,3 @@
+# quoteWishy
+
+random quote generator
