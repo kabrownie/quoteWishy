@@ -175,14 +175,19 @@ var quotes = [
     ];
 
     function newQuote(){ 
-        if(quotes.length) {
-    let randomNumber = Math.floor(Math.random() * (quotes.length));
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
 
     //placing quote in display
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
-    quotes.splice(random, 1);
-}
+    }
 
-else {
-    document.getElementById('quoteDisplay'.innerHTML = "No more quotes!");
-}} 
+    const getRandomNumber = (maxnum) => {
+        return Math.floor(Math.random()* maxnum);
+    };
+
+    const pageBody = document.querySelector('body');
+    function newColor(){
+        let color = '#' + (Math.random()*0xFFFFFF<<0).toString(16);
+        pageBody.style.backgroundColor = color;
+    }
+  
