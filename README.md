@@ -1,6 +1,7 @@
 # quoteWishy
 
 random quote generator
-use link
+      
+use link below
 
 https://karanja019.github.io/quoteWishy/
