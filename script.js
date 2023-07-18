@@ -1,4 +1,4 @@
-var quotes = [
+const quotes = [
     "\"The purpose of our lives is to be happy.\"  — Dalai Lama",
     "\"Life is what happens when you’re busy making other plans.\" — John Lennon",    
     "\"Get busy living or get busy dying.\" — Stephen King",    
@@ -175,7 +175,7 @@ var quotes = [
     ];
 
     function newQuote(){ 
-    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    let randomNumber = Math.floor(Math.random() * (quotes.length));
 
     //placing quote in display
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
